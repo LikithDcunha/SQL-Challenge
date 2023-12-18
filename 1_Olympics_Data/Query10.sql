@@ -1,6 +1,6 @@
 --10. Find the Ratio of male and female athletes participated in all olympic games
 
--- This is a tricky one: We will use row number to get the desired result in method 2.
+-- This is a tricky one: We will use row number to get the desired result in step 2.
 
 SELECT 
     gender, COUNT(1) as cnt 
@@ -9,7 +9,7 @@ group by 1 ;           ---get the count of Male and female athletes.
 
 ----- 
 
--- Method 1) 
+-- step 1) 
 SELECT
     gender,
     COUNT(1) AS gender_count,
@@ -19,12 +19,7 @@ FROM
 GROUP BY
     gender;
 
------
-
-
-
-
--- Method 2)  Find the Ratio of male and female athletes participated in all olympic games.
+-- step 2)  Find the Ratio of male and female athletes participated in all olympic games.
 WITH 
     t1 AS (
         SELECT gender, COUNT(1) AS cnt
@@ -41,5 +36,5 @@ WITH
     max_cnt AS (
         SELECT cnt FROM t2 WHERE rn = 2
     )
-SELECT CONCAT('1 : ', ROUND(CAST(max_cnt.cnt AS DECIMAL) / min_cnt.cnt, 2)) AS ratio_Females_To_Males -- we find that males outnumber females in our previous queries
+SELECT CONCAT('1 : ', ROUND(CAST(max_cnt.cnt AS DECIMAL) / min_cnt.cnt, 2)) AS ratio_Females_To_Males -- we find that males outnumber females in our previous query
 FROM min_cnt, max_cnt;
