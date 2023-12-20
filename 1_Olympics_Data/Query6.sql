@@ -36,4 +36,6 @@ Where
     m.medal_name in ('Gold', 'Silver', 'Bronze')
 Group by 1,2
 Order by 
-    total_Gold_medal DESC;
+    total_Gold_medal DESC
+Limit 10;
+
