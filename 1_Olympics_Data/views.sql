@@ -1,6 +1,3 @@
-
-
-
 -- USES of a view:
 --1) A view can be used to simplify a query. 
 --   Mainly when sharing a sql query with a stakeholder a view can be shared instead of the complex sql query that may be too technical for some stakeholders.
