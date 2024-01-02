@@ -9,7 +9,7 @@ SQL is a powerful query language, and this repository encourages users to experi
 
 
 ## Queries Overview
-Please browse the main directory and [Results/] directory to find specific results and their queries.
+Please browse the main directory and Results directory to find specific results and their queries.
 
 ## How to Use
 
@@ -20,5 +20,5 @@ To use the queries in this repository, follow these steps:
    ```bash
    git clone https://github.com/LikithDcunha/SQL-Challenge.git
    
-2. Add the data from the dump file (if available) using source command to your Mysql server after creating a database in the name of your choice. 
+2. Add the data from the dump file (if available) using `source` command to your Mysql server after creating a database in the name of your choice. 
 
