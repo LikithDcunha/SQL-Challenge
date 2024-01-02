@@ -9,7 +9,7 @@ SQL is a powerful query language, and this repository encourages users to experi
 
 
 ## Queries Overview
-Please browse the main directory and (results/) directory to find specific results and their queries.
+Please browse the main directory and [Results/] directory to find specific results and their queries.
 
 ## How to Use
 
